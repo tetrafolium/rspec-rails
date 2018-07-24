@@ -77,6 +77,8 @@ if RUBY_VERSION >= '2.0.0' && RUBY_VERSION < '2.2.0'
   gem 'rubocop', "~> 0.23.0"
 end
 
+gem 'rubocop'
+
 custom_gemfile = File.expand_path("../Gemfile-custom", __FILE__)
 eval_gemfile custom_gemfile if File.exist?(custom_gemfile)
 
